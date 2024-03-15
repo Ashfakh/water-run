@@ -1,0 +1,72 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrolling */
+    height: 100%;
+    /* Full height */
+}
+
+img#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+    /* Ensure it's above the canvas */
+}
+
+img#resetButton {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+    /* Ensure it's above the canvas */
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+canvas {
+    flex-grow: 1;
+    /* Allows the canvas to fill the available space */
+    background-color: #87CEEB;
+    /* Light sky blue; adjust as needed */
+}
+
+#controls {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #controls {
+        display: flex;
+        /* Show controls on small screens */
+        justify-content: center;
+        padding: 10px 0;
+        background-color: #fff;
+    }
+
+    #controls button {
+        width: 60px;
+        height: 60px;
+        margin: 0 10px;
+        border-radius: 50%;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+    }
+}

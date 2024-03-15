@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Water Run: Bangalore Dash</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</head>
+
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="controls">
+            <button id="leftBtn">Left</button>
+            <button id="jumpBtn">Jump</button>
+            <button id="rightBtn">Right</button>
+        </div>
+    </div>
+    <img id="startButton" src="assets/startButton.png" alt="Start Game">
+    <img id="resetButton" src="assets/startButton.png" alt="Reset Game">
+    <audio id="bgMusic" src="assets/background_music.mp3" loop autoplay hidden></audio>
+    <audio id="jumpSound" src="assets/jumpsound.wav" hidden></audio>
+    <audio id="scoreSound" src="assets/water-splash.wav" hidden></audio>
+    <audio id="crashSound" src="assets/crash.wav" hidden></audio>
+    <audio id="gameOverSound" src="assets/gameover.wav" hidden></audio>
+    <script src="js/obstacle.js"></script>
+    <script src="js/powerup.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
