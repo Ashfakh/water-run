@@ -1,17 +1,16 @@
 class Player {
-    constructor(canvasHeight) {
+    constructor() {
         this.x = 150;
         this.y = 0;
-        this.width = 100;
+        this.width = 75;
         this.height = 100;
         this.color = '#FF6347';
         this.velocityY = 0;
         this.velocityX = 0;
-        this.speed = 3;
+        this.speed = 5;
         this.gravity = 1;
         this.jumpForce = -20;
         this.grounded = false;
-        this.canvasHeight = canvasHeight;
     }
 
     move(direction) {
